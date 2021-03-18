@@ -183,6 +183,7 @@ label #cancel{
   background: #2c3a47;
   height:430px;
   padding: 20px;
+  overflow: scroll
 
 }
 
