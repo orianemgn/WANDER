@@ -1,0 +1,26 @@
+<section class="showcase">
+    <header>
+      <h2 class="logo">Wander</h2>
+    </header>
+   
+    <div class="overlay"></div>
+    <div class="text">
+      <h2>Sign Up </h2> 
+      <h3>and have fun</h3>
+  <form action="/signup" method="POST">
+  <label for="username">Username</label>
+  <input type="text" name="username">
+  <label for="">Password</label>
+  <input type="password" name="password">
+  <button type="submit">Sign Up</button>
+</form>
+{{#if message}}
+  <p style='color: red'>{{message}}</p>
+{{/if}}
+    </div>
+    <ul class="social">
+      <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+      <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+      <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+    </ul>
+  </section>

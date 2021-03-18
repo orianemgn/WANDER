@@ -1,0 +1,325 @@
+/*Map */ 
+#map {
+  /*position: absolute; */
+ position: absolute;
+   top: 0;
+   bottom: 0;
+   width:100%;
+   height: 100vh;
+   z-index: -1; 
+ }
+
+
+/*searchbar*/
+
+ .geocoder {
+
+  /*position: absolute;*/
+  z-index: 1;
+  width: 100%;
+  padding: 0.5rem
+  /*left: 50%;*/
+  /*margin-left: -25%;*/
+  /*top: 1rem;*/
+}
+
+
+.mapboxgl-ctrl-geocoder {
+  min-width: 100%;
+}
+
+
+/*# sourceMappingURL=style.css.map */
+
+
+/* nav*/ 
+
+.nav {
+  align-items: center; 
+  margin-right:2rem;
+  background-color: rgba(255, 255, 255, 0);
+ height: 5rem; 
+}
+
+/* sidebar */ 
+.sidebar {
+  position: fixed; 
+  left: -550px;
+  width: 400px;
+  height: 100%;
+  transition: all .5s ease;
+  z-index: 100;
+}
+
+
+
+#check:checked ~ .sidebar .sidebar{
+  left: 0;
+}
+
+
+.sidebar ul a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 20px;
+  color: white;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(255,255,255,.1);
+  transition: .4s;
+}
+ul li:hover a{
+  padding-left: 50px;
+}
+
+.sidebar ul a i{
+  margin-right: 17px;
+}
+
+/* checkbox*/
+
+label #btn,label #cancel{
+  position: absolute;
+  background:#8eb2c4;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+
+label #btn{
+  left: 10px;
+  top: 25px;
+  font-size: 35px;
+  color: white;
+  padding: 6px 12px;
+  transition: all .5s;
+}
+
+label #cancel{
+  z-index: 1111;
+  left: -195px;
+  top: 17px;
+  font-size: 30px;
+  color: #0a5275;
+  padding: 4px 9px;
+  transition: all .5s ease;
+}
+
+#check{
+   display:none;
+}
+
+/* Ohne checked ist content weg buttons da */ 
+#check:checked ~ .sidebar{
+  left: 0; 
+}
+
+
+#check:checked ~ label #btn{
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+/* X  ist dann weg wenn*/ 
+#check:checked ~ label #cancel{
+  left: 350px;
+}
+
+
+#check:checked ~ section{
+  margin-left: 250px;
+}
+
+
+
+.profile-card{
+  width: 400px; 
+  text-align: center;
+  border-radius: 0px 0px 0px 0px;
+  overflow: hidden; 
+  /* background-color: blueviolet;*/
+}
+
+
+.card-header{
+ /* background: #2c3a47;*/
+  background: #2c3a47;
+  height:430px;
+  padding: 20px;
+  
+}
+
+
+.sidebar header {
+  font-size: 22px;
+  color: white;
+  line-height: 70px;
+  text-align: center;
+  background:#8eb2c4;
+  user-select: none;
+}
+
+.search-bar {
+  /*background: #8eb2c4;*/
+  background:#8eb2c4;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.card-footer{
+  /*background: #f4f4f4;*/
+  background: #f4f4f4;;
+  padding: 20px 10px;
+  top: 30px;
+  border-radius: 0px 0px 30px 0px;
+}
+
+.card-scrollbar {
+  background: #2c3a47;
+  height:430px;
+  padding: 20px;
+
+}
+
+/* scrollbar need to be fixed 
+.card-scrollbar::-webkit-scrollbar {
+  width: 1em;
+}
+ 
+.card-scrollbar::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+.card-scrollbar::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+*/
+.pic{
+
+  display: inline-block;
+  padding: 8px;
+  background: linear-gradient(130deg, #74b9ff, #e66767);
+  margin: auto;
+  border-radius: 50%;
+  /*background-size: 200% 200%;*/
+  /*animation: animated-gradient 2s linear infinite;*/
+
+}
+
+
+.pic img{
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.name{
+  color: #f2f2f2;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.desc{
+  font-size: 18px;
+  color: #03a9f4;
+}
+
+.sm{
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.sm a{
+  color: #f2f2f2;
+  width: 56px;
+  font-size: 22px;
+  transition: .3s linear;
+}
+
+.sm a:hover{
+  color: #03a9f4;
+}
+
+.contact-btn{
+  display: inline-block;
+  padding: 12px 50px;
+  color: #8eb2c4;
+  border: 2px solid #8eb2c4;
+  border-radius: 6px;
+  margin-top: 16px;
+  transition: .3s linear;
+}
+
+.contact-btn:hover{
+  background: #e66767;
+  /*color: #f2f2f2;*/ 
+  background: #e66767;
+}
+
+
+
+.numbers{
+  display: flex;
+  align-items: center;
+}
+
+.item{
+  flex: 1;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #e66767;
+}
+
+.item span{
+  display: block;
+  color: #2c3a47;
+  font-size: 30px;
+}
+
+.border{
+  width: 1px;
+  height: 30px;
+  background: #bbb;
+}
+
+/* form 
+
+.form .form-control {
+margin: 30px 0;
+}
+
+.form input[type='description'],
+.form input[type='number"'] {
+ border: 0;
+ border-bottom:1px solid #b4becb6e;
+ width: 100%;
+ padding: 3px;
+ font-size:16px;
+ 
+}
+*/ 
+
+
+.buttonUser {
+  display:inline-block;
+  font-size: 0.8em;
+  background:white;
+  padding: 8px 10px;
+  text-decoration: none;
+  color:#111;
+  margin-top:10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.2s;
+  margin-bottom:0.5rem;
+}
+
