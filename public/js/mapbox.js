@@ -138,7 +138,7 @@ showMarkers();
 
 function showPopUp(){
   // axios.get('http://localhost:3000/api/favoritesPlaces').then(response => {
-    axios.get('https://wander-2.herokuapp.com/api/favoritesPlaces').then(response => {
+    axios.get('https://wanderstr.herokuapp.com/api/favoritesPlaces').then(response => {
     
     const places = response.data.data; 
     places.forEach(place => {
