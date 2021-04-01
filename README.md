@@ -27,4 +27,7 @@ Wander is a full-stack application to save your favourite places around the worl
 ## Credits
 :raised_hands: Built and designed by  [@lilanika](https://github.com/lilanika), [@lpalmero](https://github.com/lpalmero) & [@orianemgn](https://github.com/orianemgn/)
 
+## Initital repo 
+[@Wander](https://github.com/PROJECT2-WANDER)
+
 
