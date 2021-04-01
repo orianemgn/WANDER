@@ -18,7 +18,7 @@
            </div>      
     <div class="profile-card">
       <div class="card-scrollbar">
-        <div class="name"> your list </div>
+        <div class="name"> Your favorite places</div>
        {{#each places}}
 <a href="/favoritesPlaces/{{this._id}}"><h1>{{name}}</h1></a>
 </form> 
@@ -34,8 +34,8 @@
     <option value="Culture">Culture</option>
     <option value="Club">Club, Party!!!</option>
   </select>
-  <button type="submit">Filter</button>
-  <a href="/favoritesPlaces">No filter </a>
+  <button class="buttonUser" type="submit">Filter</button>
+  <a class="buttonUser" href="/favoritesPlaces">No filter</a>
 </form>
 </div>
 <div class="card-footer">

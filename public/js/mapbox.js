@@ -100,7 +100,7 @@ map.on('load', function() {
 function showMarkers(){
   console.log('SHOW MARKERS'); 
   //axios.get('http://localhost:3000/api/favoritesPlaces').then(response =>{
-    axios.get('https://wanderstr.herokuapp.com/api/favoritesPlaces').then(response =>{
+   axios.get('https://wanderstr.herokuapp.com/api/favoritesPlaces').then(response =>{
   const places = response.data.data; 
   let color = 'red'; 
   console.log(places); 
@@ -137,7 +137,7 @@ function showMarkers(){
 showMarkers(); 
 
 function showPopUp(){
-  // axios.get('http://localhost:3000/api/favoritesPlaces').then(response => {
+   //axios.get('http://localhost:3000/api/favoritesPlaces').then(response => {
     axios.get('https://wanderstr.herokuapp.com/api/favoritesPlaces').then(response => {
     
     const places = response.data.data; 

@@ -12,6 +12,7 @@
   list-style: none;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
+  /* color: #00b7ff; */
 }
 
 
@@ -19,7 +20,8 @@ a {
 color: #00b7ff; }
 
 h1 {
-font-size: 1rem; }
+font-size: 1rem;
+font-weight: lighter; }
 
 
 .text {
@@ -91,3 +93,4 @@ font-size: 1rem; }
   letter-spacing: 2px;
   transition: 0.2s;
 }
+

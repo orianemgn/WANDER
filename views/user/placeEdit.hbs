@@ -1,17 +1,14 @@
 <!--nav --> 
 <section class="flexbox nav ">
 <h2 class="logo">Wander</h2>
+
  <!--sidebar edit --> 
  <section class="flexbox ">
-   
     <input type="checkbox" id="check" checked>
     <label for="check">
-
       <i class="fa fa-bars" aria-hidden="hidden" id="cancel"></i>
       <i class="fa fa-bars" id="btn"></i>
     </label> 
-
- 
 
     <div class="sidebar">
     <header class ="header-name"> Place Details</header>
@@ -19,18 +16,19 @@
         <div class ="search-bar ">
              <div id="geocoder" class="geocoder"></div>
           <a href="/favoritesPlaces" >
-          <button id="saveLocation" >Save location</button></a>
+          <button class="buttonUser" id="saveLocation" >Save location</button></a>
            </div>
     <!--body of sidebar -->
     <div class="profile-card">
-      <div class="card-header "> 
-      <div class = 'favorite-place-list  '> 
-        <h1>Edit this place</h1>
+      <div class="card-header flexbox column "> 
+      <div class = 'favorite-place-list flexbox column'> 
+        <h2>Edit this place</h2>
 <div>{{place.name}}</div>
 {{#with place}}
-<form action="/favoritesPlaces/{{_id}}/edit" method="POST">
-  <label for="description">description: </label>
+<form class="form" action="/favoritesPlaces/{{_id}}/edit" method="POST">
+  <label for="description">Description: </label>
   <input  type="description" name="description" id="description" value="{{description}}">
+  <br>
   <label for="tag">Tag:</label>
   <select name="tag" id="tag">
     <option selected> Choose...</option>
@@ -41,12 +39,13 @@
     <option value="Culture">Culture</option>
     <option value="Club">Club, Party!!!</option>
   </select>
-  <label for="rating">Rating: </label>
+  <br>
+  <label for="rating"> Your rating: </label>
   <input  type="number" name="rating" id="rating" value="{{rating}}">
-  <button id="saveTag" type="submit">Update the place</button>
+  <button class="buttonUser" id="saveTag" type="submit">Update the place</button>
 </form>
 {{/with}}
-<button type="submit">Delete</button>
+<button class="buttonUser" type="submit">Delete</button>
 </div> <!--end of card header-->
 </div>
 <div class="card-footer">

@@ -23,7 +23,7 @@
       <div class="card-header flexbox column"> 
       <div class = 'favorite-place-list flexbox column '> 
 <h2 class = "name">{{place.name}}</h2>
-<p>{{place.address}}</p>
+<p><b>{{place.address}}</b></p>
 <p>{{place.category}}</p>
 <p>{{place.description}}</p>
 <p>{{place.tag}}</p>
@@ -35,7 +35,7 @@
 
 <form  action="/favoritesPlaces/{{place._id }}/delete" method="POST">
 <button class="buttonUser" type="submit">Delete</button> </form>
-  <a href="/" class=> back</a>
+  {{!-- <a href="/" class=> back</a> --}}
   </div>
 </div> <!--end of card header-->
 <div class="card-footer">
