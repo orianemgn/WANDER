@@ -2,7 +2,7 @@
 ### Build with Express, Handlebars, MongoDB, MapBox API in 5 days during Ironhacks bootcamp
 
 ## The project
-Wander is an application to save your favourite places around the world 
+Wander is a full-stack application to save your favourite places around the world 
 * :mag: search function and possibility to save places on your account 
 * :pencil2: Possibility to edit the places and to add a comment, a note or a colour tag according to their categories
 * :large_blue_circle: Possibility to filter your list by category (e.g. restaurant, sport, culture)
@@ -15,7 +15,7 @@ Wander is an application to save your favourite places around the world
 * Paula // XXXVls!!52
 
 ## What it looks like 
-[!firstPage](firstPage.JPG)
+[![firstPage](https//firstPage.JPG)]
 
 
 
