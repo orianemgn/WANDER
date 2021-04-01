@@ -11,7 +11,7 @@ Wander is a full-stack application to save your favourite places around the worl
 ## How to quickly try it?
 :sun_with_face: The project is hosted on Heroku: https://wanderstr.herokuapp.com/
 
-:bulb: If you don't want to go through the sign-up process, here are a login credentials you can use:
+:bulb: If you don't want to go through the sign-up process, here is a login credentials you can use:
 * Paula // XXXVls!!52
 
 ## What it looks like 
