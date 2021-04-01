@@ -15,7 +15,8 @@ Wander is a full-stack application to save your favourite places around the worl
 * Paula // XXXVls!!52
 
 ## What it looks like 
-[![firstPage](https//firstPage.JPG)]
+<!-- [![firstPage]())] -->
+<img src="./images/firstPage.JPG">
 
 
 
