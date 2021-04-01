@@ -19,7 +19,7 @@ Wander is a full-stack application to save your favourite places around the worl
 <img src="./public/images/firstPage.JPG">
 <img src="./public/images/list.JPG">
 <img src="./public/images/details.JPG">
-<img src="./public/images/edit.JPG">
+
 
 
 
